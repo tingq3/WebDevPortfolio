@@ -2,8 +2,6 @@ import React from "react";
 import {
   Navbar as MTNavbar,
   Collapse,
-  Button,
-  IconButton,
   Typography,
 } from "@material-tailwind/react";
 import {
@@ -12,8 +10,6 @@ import {
   FingerPrintIcon,
   ClipboardDocumentCheckIcon,
   PhoneArrowDownLeftIcon,
-  XMarkIcon,
-  Bars3Icon,
 } from "@heroicons/react/24/solid";
 
 const NAV_MENU = [

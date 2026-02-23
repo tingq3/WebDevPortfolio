@@ -1,94 +1,127 @@
-# [NextJS Tailwind Portfolio Page](http://demos.creative-tim.com/nextjs-tailwind-portfolio-page?ref=readme-ntpp) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/nextjs-tailwind-portfolio-page&text=Check%20Material%20Tailwind%202%20Template%20made%20by%20@CreativeTim%20#webdesign%20#template%20#materialdesign%20#react%20https://www.creative-tim.com/product/nextjs-tailwind-portfolio-page)
+# Create Next App
 
-![version](https://img.shields.io/badge/version-1.0.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/nextjs-tailwind-portfolio-page.svg)](https://github.com/creativetimofficial/nextjs-tailwind-portfolio-page/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/nextjs-tailwind-portfolio-page.svg)](https://github.com/creativetimofficial/nextjs-tailwind-portfolio-page/issues?q=is%3Aissue+is%3Aclosed)
+The easiest way to get started with Next.js is by using `create-next-app`. This CLI tool enables you to quickly start building a new Next.js application, with everything set up for you. You can create a new app using the default Next.js template, or by using one of the [official Next.js examples](https://github.com/vercel/next.js/tree/canary/examples). To get started, use the following command:
 
-![Image](https://s3.amazonaws.com/creativetim_bucket/products/739/original/material-tailwind-react-portfolio-template-thumbnail.jpg?1697615979)
+### Interactive
 
-Introducing Tailwind Portfolio Page, a versatile and stylish portfolio template built on the foundation of Tailwind CSS and Material Tailwind.
+You can create a new project interactively by running:
 
-Are you in search of a professionally designed and highly customizable portfolio web page template tailored for artists, designers, photographers, and creative professionals to showcase their work and establish a strong online presence? Look no further! We are excited to present to you our Free Portfolio Page Template, meticulously crafted to cater to the needs of portfolio website developers like you.
+```bash
+npx create-next-app@latest
+# or
+yarn create next-app
+# or
+pnpm create next-app
+# or
+bunx create-next-app
+```
 
-This template, designed with Tailwind CSS and Material Tailwind, offers effortless customization to align perfectly with your website's unique branding. The free portfolio template boasts essential features such as hero, logo, testimonial, and features sections.
+You will be asked for the name of your project, and then whether you want to
+create a TypeScript project:
 
-**Documentation built by Developers**
+```bash
+✔ Would you like to use TypeScript? … No / Yes
+```
 
-Each element is well presented in very complex documentation.
+Select **Yes** to install the necessary types/dependencies and create a new TS project.
 
-You can read more about the [documentation here](https://www.material-tailwind.com/docs/react/installation).
+### Non-interactive
 
-**HELPFUL LINKS**
+You can also pass command line arguments to set up a new project
+non-interactively. See `create-next-app --help`:
 
-- View [Github Repository](https://github.com/creativetimofficial/nextjs-tailwind-portfolio-page)
-- Check [FAQ Page](https://www.creative-tim.com/faq)
+```bash
+Usage: create-next-app [project-directory] [options]
 
-## [Demo](https://creative-tim.com/product/nextjs-tailwind-portfolio-page)
+Options:
+  -V, --version                        output the version number
+  --ts, --typescript
 
-## Quick start
+    Initialize as a TypeScript project. (default)
 
-Quick start options:
+  --js, --javascript
 
-- Download from [Creative Tim](https://www.creative-tim.com/product/nextjs-tailwind-portfolio-page?ref=readme-ntpp).
+    Initialize as a JavaScript project.
 
-## Terminal Commands
+  --tailwind
 
-1. Download and Install NodeJs LTS version from [NodeJs Official Page](https://nodejs.org/en/download/).
-2. Navigate to the root ./ directory of the product and run `npm install` to install our local dependencies.
+    Initialize with Tailwind CSS config. (default)
 
-## Documentation
+  --eslint
 
-The documentation for the Material Dashboard is hosted at our [website](https://www.material-tailwind.com/docs/react/installation?ref=readme-ntpp).
+    Initialize with ESLint config.
 
-## Browser Support
+  --app
 
-At present, we officially aim to support the last two versions of the following browsers:
+    Initialize as an App Router project.
 
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
+  --src-dir
 
-## Resources
+    Initialize inside a `src/` directory.
 
-- [Live Preview](https://demos.creative-tim.com/nextjs-tailwind-portfolio-page?ref=readme-ntpp)
-- [Download Page](https://www.creative-tim.com/product/nextjs-tailwind-portfolio-page?ref=readme-ntpp)
-- Documentation is [here](https://www.material-tailwind.com/docs/react/installation?ref=readme-ntpp)
-- [License Agreement](https://www.creative-tim.com/license?ref=readme-ntpp)
-- [Support](https://www.creative-tim.com/contact-us?ref=readme-ntpp)
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/nextjs-tailwind-portfolio-page/issues)
-- [Nepcha Analytics](https://nepcha.com?ref=readme) - Analytics tool for your website
+  --import-alias <alias-to-configure>
 
-## Reporting Issues
+    Specify import alias to use (default "@/*").
 
-We use GitHub Issues as the official bug tracker for the Nextjs + Tailwind Portfolio Page. Here are some advices for our users that want to report an issue:
+  --empty
 
-1. Make sure that you are using the latest version of the Nextjs + Tailwind Portfolio Page. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/product/nextjs-tailwind-portfolio-page?ref=readme-ntpp).
-2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
-3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
+    Initialize an empty project.
 
-## Technical Support or Questions
+  --use-npm
 
-If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us?ref=readme-ntpp) instead of opening an issue.
+    Explicitly tell the CLI to bootstrap the application using npm
 
-## Licensing
+  --use-pnpm
 
-- Copyright 2023 [Creative Tim](https://www.creative-tim.com?ref=readme-ntpp)
-- Creative Tim [license](https://www.creative-tim.com/license?ref=readme-ntpp)
+    Explicitly tell the CLI to bootstrap the application using pnpm
 
-## Useful Links
+  --use-yarn
 
-- [More products](https://www.creative-tim.com/templates?ref=readme-ntpp) from Creative Tim
+    Explicitly tell the CLI to bootstrap the application using Yarn
 
-- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
+  --use-bun
 
-- [Freebies](https://www.creative-tim.com/bootstrap-themes/free?ref=readme-ntpp) from Creative Tim
+    Explicitly tell the CLI to bootstrap the application using Bun
 
-- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=readme-ntpp) (earn money)
+  -e, --example [name]|[github-url]
 
-##### Social Media
+    An example to bootstrap the app with. You can use an example name
+    from the official Next.js repo or a GitHub URL. The URL can use
+    any branch and/or subdirectory
 
-Twitter: <https://twitter.com/CreativeTim>
+  --example-path <path-to-example>
 
-Facebook: <https://www.facebook.com/CreativeTim>
+    In a rare case, your GitHub URL might contain a branch name with
+    a slash (e.g. bug/fix-1) and the path to the example (e.g. foo/bar).
+    In this case, you must specify the path to the example separately:
+    --example-path foo/bar
 
-Dribbble: <https://dribbble.com/creativetim>
+  --reset-preferences
 
-Google+: <https://plus.google.com/+CreativetimPage>
+    Explicitly tell the CLI to reset any stored preferences
 
-Instagram: <https://instagram.com/creativetimofficial>
+  --skip-install
+
+    Explicitly tell the CLI to skip installing packages
+
+  --disable-git
+
+    Explicitly tell the CLI to skip initializing a git repository.
+
+  --yes
+
+    Use previous preferences or defaults for all options that were not
+    explicitly specified, without prompting.
+
+  -h, --help                           display help for command
+```
+
+### Why use Create Next App?
+
+`create-next-app` allows you to create a new Next.js app within seconds. It is officially maintained by the creators of Next.js, and includes a number of benefits:
+
+- **Interactive Experience**: Running `npx create-next-app@latest` (with no arguments) launches an interactive experience that guides you through setting up a project.
+- **Zero Dependencies**: Initializing a project is as quick as one second. Create Next App has zero dependencies.
+- **Offline Support**: Create Next App will automatically detect if you're offline and bootstrap your project using your local package cache.
+- **Support for Examples**: Create Next App can bootstrap your application using an example from the Next.js examples collection (e.g. `npx create-next-app --example route-handlers`).
+- **Tested**: The package is part of the Next.js monorepo and tested using the same integration test suite as Next.js itself, ensuring it works as expected with every release.
