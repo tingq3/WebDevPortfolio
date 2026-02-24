@@ -11,8 +11,17 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { EnvelopeIcon, PhoneIcon, TicketIcon } from "@heroicons/react/24/solid";
+import { useEffect } from "react";
+
 
 export function ContactForm() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://web3forms.com/client/script.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+  
   return (
     <section id="contact-form" className="px-8 py-16">
       <div className="container mx-auto mb-20 text-center">
@@ -72,7 +81,7 @@ export function ContactForm() {
               </div>
             </div>
             <div className="w-full mt-8 md:mt-0 md:px-10 col-span-4 h-full p-5">
-              <form action="#">
+              <form action="https://api.web3forms.com/submit" method="POST">
                 <div className="mb-8 grid gap-4 lg:grid-cols-2">
                   {/* @ts-ignore */}
                   <Input
@@ -105,8 +114,8 @@ export function ContactForm() {
                   size="lg"
                   variant="static"
                   label="Email"
-                  name="first-name"
-                  placeholder="eg. lucas@mail.com"
+                  name="email"
+                  placeholder="eg. lucas@gmail.com"
                   containerProps={{
                     className: "!min-w-full mb-8",
                   }}
@@ -138,13 +147,15 @@ export function ContactForm() {
                   size="lg"
                   variant="static"
                   label="Your Message"
-                  name="first-name"
+                  name="message"
                   containerProps={{
                     className: "!min-w-full mb-8",
                   }}
                 />
+                <div className="h-captcha" data-captcha="true"></div>
+                <input type="hidden" name="access_key" value="07b4653c-f762-4252-9f42-3cf4d4a1dd2a"></input>
                 <div className="w-full flex justify-end">
-                  <Button className="w-full md:w-fit" color="gray" size="md">
+                  <Button className="w-full md:w-fit" color="gray" size="md" type="submit">
                     Send message
                   </Button>
                 </div>
