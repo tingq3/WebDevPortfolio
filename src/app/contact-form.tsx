@@ -153,7 +153,7 @@ export function ContactForm() {
                   }}
                 />
                 <div className="h-captcha" data-captcha="true"></div>
-                <input type="hidden" name="access_key" value="07b4653c-f762-4252-9f42-3cf4d4a1dd2a"></input>
+                <input type="hidden" name="access_key" value="c8f8fd91-def9-4489-b5ba-2da80474dd98"></input>
                 <div className="w-full flex justify-end">
                   <Button className="w-full md:w-fit" color="gray" size="md" type="submit">
                     Send message

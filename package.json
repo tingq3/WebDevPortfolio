@@ -4,7 +4,7 @@
   "private": true,
   "author": "Creative Tim",
   "license": "See license in https://www.creative-tim.com/license",
-  "homepage": "https://demos.creative-tim.com/nextjs-tailwind-portfolio-page",
+  "homepage": "https://tingq3.github.io/WebDevPortfolio/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
