@@ -5,24 +5,22 @@ import { Typography } from "@material-tailwind/react";
 
 const PROJECTS = [
   {
-    img: "/image/blog-1.svg",
-    title: "F1 Data Analytics Platform",
-    desc: "A custom Formula 1 website that integrates live and historical F1 data through APIs, featuring private matches, race comparisons, and interactive data views for deeper performance analysis.",
-  },
-  {
     img: "/image/blog2.svg",
     title: "Weather Trend Prediction Research",
     desc: "A research project evaluating different machine learning models to learn and predict weather trends, using Python for data processing, visualization, and model comparison.",
+    href: "/image/weatherReport.pdf"
   },
   {
     img: "/image/blog3.svg",
     title: "Startup Flowchart Web App",
     desc: "A fast and lightweight web application designed for startups to quickly create, edit, and share flowcharts, focusing on usability, performance, and clean interface design.",
+    href: "https://auto-timetable-gilt.vercel.app/"
   },
   {
     img: "/image/blog4.svg",
     title: "E-commerce Web Application",
     desc: "An e-commerce platform offering access to modern gadgets and accessories, featuring dynamic product listings and a scalable, data-driven structure.",
+    href: "#"
   },
 ];
 
@@ -44,7 +42,7 @@ export function Projects() {
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4">
         {PROJECTS.map((props, idx) => (
-          <ProjectCard key={idx} {...props} />
+          <ProjectCard key={idx} {...props}/>
         ))}
       </div>
     </section>

@@ -42,7 +42,7 @@ export function Resume() {
             color="gray"
             className="flex items-center gap-2"
           >
-            view more
+            <a>view more</a>
             <ArrowRightIcon
               strokeWidth={3}
               className="h-3.5 w-3.5 text-gray-900"
