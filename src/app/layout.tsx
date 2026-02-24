@@ -2,7 +2,13 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import { Layout, FixedPlugin } from "@/components";
+import { FixedPlugin } from "@/components/fixed-plugin";
+import dynamic from "next/dynamic";
+
+const Providers = dynamic(
+  () => import("@/components/providers"),
+  { ssr: false }
+);
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -11,9 +17,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js + Tailwind Portfolio Page",
+  title: "Jack's Portfolio",
   description:
-    "Introducing Tailwind Portfolio Page, a versatile and stylish portfolio template built on the foundation of Tailwind CSS and Material Tailwind.",
+    "Hi, I'm a full-stack web developer experienced in building responsive, high-performance web applications",
 };
 
 export default function RootLayout({
@@ -32,10 +38,10 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </head>
       <body className={roboto.className}>
-        <Layout>
+        <Providers>
           {children}
           <FixedPlugin />
-        </Layout>
+        </Providers>
       </body>
     </html>
   );

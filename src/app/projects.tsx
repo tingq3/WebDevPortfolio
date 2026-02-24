@@ -16,12 +16,12 @@ const PROJECTS = [
     desc: "A fast and lightweight web application designed for startups to quickly create, edit, and share flowcharts, focusing on usability, performance, and clean interface design.",
     href: "https://auto-timetable-gilt.vercel.app/"
   },
-  {
-    img: "/image/blog4.svg",
-    title: "E-commerce Web Application",
-    desc: "An e-commerce platform offering access to modern gadgets and accessories, featuring dynamic product listings and a scalable, data-driven structure.",
-    href: "#"
-  },
+  // {
+  //   img: "/image/blog4.svg",
+  //   title: "E-commerce Web Application",
+  //   desc: "An e-commerce platform offering access to modern gadgets and accessories, featuring dynamic product listings and a scalable, data-driven structure.",
+  //   href: "#"
+  // },
 ];
 
 export function Projects() {

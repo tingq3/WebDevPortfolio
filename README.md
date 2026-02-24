@@ -125,3 +125,6 @@ Options:
 - **Offline Support**: Create Next App will automatically detect if you're offline and bootstrap your project using your local package cache.
 - **Support for Examples**: Create Next App can bootstrap your application using an example from the Next.js examples collection (e.g. `npx create-next-app --example route-handlers`).
 - **Tested**: The package is part of the Next.js monorepo and tested using the same integration test suite as Next.js itself, ensuring it works as expected with every release.
+
+
+- **notes**: material-tailwind is used in this project, with some components treated as server components by default. When used/even just fetched in root layout without proper client isolation, it gets evaluated during server-side rendering, which can lead to errors like createContext is not a function or Maximum call stack size exceeded.
