@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
 
 function Hero() {
@@ -24,10 +23,7 @@ function Hero() {
             development, where creativity meets functionality.
           </Typography>
         </div>
-        <Image
-          width={1024}
-          height={1024}
-          alt="team work"
+        <img
           src="/image/image-7.jpg"
           className="h-[42rem] w-full rounded-xl object-scale-down"
         />

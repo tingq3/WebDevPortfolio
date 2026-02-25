@@ -2,7 +2,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import { FixedPlugin } from "@/components/fixed-plugin";
 import dynamic from "next/dynamic";
 
 const Providers = dynamic(
@@ -35,7 +34,6 @@ export default function RootLayout({
       <body className={roboto.className}>
         <Providers>
           {children}
-          <FixedPlugin />
         </Providers>
       </body>
     </html>
