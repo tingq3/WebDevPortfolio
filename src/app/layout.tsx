@@ -35,7 +35,7 @@ export default function RootLayout({
           data-site="https://tingq3.github.io/WebDevPortfolio/"
           src="https://api.nepcha.com/js/nepcha-analytics.js"
         ></script>
-        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <link rel="shortcut icon" href="/image/favicon.png" type="image/png" />
       </head>
       <body className={roboto.className}>
         <Providers>
