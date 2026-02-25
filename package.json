@@ -4,7 +4,7 @@
   "private": true,
   "author": "Creative Tim",
   "license": "See license in https://www.creative-tim.com/license",
-  "homepage": "https://tingq3.github.io/WebDevPortfolio/",
+  "homepage": "https://github.com/tingq3/WebDevPortfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
