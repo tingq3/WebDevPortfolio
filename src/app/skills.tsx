@@ -1,14 +1,15 @@
 "use client";
 
-import { Typography } from "@material-tailwind/react";
 import {
+  Typography,
   RectangleGroupIcon,
   FingerPrintIcon,
   SwatchIcon,
   HashtagIcon,
   EyeIcon,
   DocumentTextIcon,
-} from "@heroicons/react/24/solid";
+} from "@/lib/mt";
+
 import { SkillCard } from "@/components";
 
 const SKILLS = [

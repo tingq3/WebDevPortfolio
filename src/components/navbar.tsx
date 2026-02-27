@@ -5,14 +5,12 @@ import {
   Navbar as MTNavbar,
   Collapse,
   Typography,
-} from "@material-tailwind/react";
-import {
   RectangleStackIcon,
   CommandLineIcon,
   FingerPrintIcon,
   ClipboardDocumentCheckIcon,
   PhoneArrowDownLeftIcon,
-} from "@heroicons/react/24/solid";
+} from "@/lib/mt";
 
 const NAV_MENU = [
   {

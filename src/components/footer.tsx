@@ -1,10 +1,9 @@
 "use client"
 
-import { Typography } from "@material-tailwind/react";
 import { 
+  Typography,
   AiFillGithub,
-  AiFillLinkedin 
- } from "react-icons/ai";
+  AiFillLinkedin  } from "@/lib/mt";
 
 const LINKS = [
   {

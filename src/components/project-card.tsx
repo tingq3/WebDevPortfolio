@@ -6,7 +6,7 @@ import {
   CardBody,
   Typography,
   Button,
-} from "@material-tailwind/react";
+} from "@/lib/mt";
 
 interface ProjectCardProps {
   img: string;

@@ -129,8 +129,21 @@ Options:
 
 - **notes**: material-tailwind is used in this project, with some components treated as server components by default. When used/even just fetched in root layout without proper client isolation, it gets evaluated during server-side rendering, which can lead to errors like createContext is not a function or Maximum call stack size exceeded.
 
-- **V0**: The production crash (Maximum call stack size exceeded) was caused by multiple React versions being installed simultaneously. The project was using react@18.3.x, while @material-tailwind/react depended on react@18.2.0.
+## ⚠️ Material Tailwind Build Issue (Next.js 13+)
 
-Having two different React instances breaks context and hook internals, which can lead to infinite render loops and stack overflows in production.
+When using `@material-tailwind/react` with Next.js 13+ (App Router), the project may work in development mode but fail during `next build` with:
 
-The fix was to pin both react and react-dom to 18.2.0, remove node_modules and package-lock.json, and reinstall to ensure only one React version is deduped across the project.
+RangeError: Maximum call stack size exceeded  
+Error occurred prerendering page "/"
+
+### 📌 Cause
+
+Next.js attempts to statically prerender pages during build time.  
+Some Material Tailwind components execute client-side logic that conflicts with this server-side prerendering process.
+
+### ✅ Fix
+
+Force the page to render dynamically instead of statically:
+
+```js
+export const dynamic = "force-dynamic";

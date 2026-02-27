@@ -1,6 +1,6 @@
 "use client";
 
-import { Typography } from "@material-tailwind/react";
+import { Typography } from "@/lib/mt";
 
 function Hero() {
   return (

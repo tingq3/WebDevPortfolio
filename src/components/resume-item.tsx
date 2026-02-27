@@ -1,6 +1,6 @@
 "use client"
 
-import { Card, Typography } from "@material-tailwind/react";
+import { Card, Typography } from "@/lib/mt";
 
 interface ResumeItemProps {
   icon: React.ElementType;

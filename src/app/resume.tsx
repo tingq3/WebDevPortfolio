@@ -1,6 +1,6 @@
 "use client";
 
-import { Typography, Button } from "@material-tailwind/react";
+import { Typography, Button } from "@/lib/mt";
 import {
   ChartBarIcon,
   PuzzlePieceIcon,

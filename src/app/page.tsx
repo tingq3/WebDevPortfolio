@@ -20,5 +20,8 @@ export default function Portfolio() {
       <ContactForm />
       <Footer />
     </>
+
   );
 }
+
+export const dynamic = "force-dynamic";
