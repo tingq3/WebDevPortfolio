@@ -23,5 +23,3 @@ export default function Portfolio() {
 
   );
 }
-
-export const dynamic = "force-dynamic";

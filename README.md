@@ -143,7 +143,4 @@ Some Material Tailwind components execute client-side logic that conflicts with 
 
 ### ✅ Fix
 
-Force the page to render dynamically instead of statically:
-
-```js
-export const dynamic = "force-dynamic";
+Enable `transpilePackages` in `next.config.js`
