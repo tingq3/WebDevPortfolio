@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image";
 import {
   Card,
   CardHeader,
@@ -19,7 +20,7 @@ export function ProjectCard({ img, title, desc, href }: ProjectCardProps) {
   return (
     <Card color="transparent" shadow={false}>
       <CardHeader floated={false} className="mx-0 mt-0 mb-6 h-48">
-        <img
+        <Image
           src={img}
           alt={title}
           width={768}

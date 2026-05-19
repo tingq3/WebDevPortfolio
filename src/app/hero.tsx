@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Typography } from "@/lib/mt";
 
 function Hero() {
@@ -23,8 +24,11 @@ function Hero() {
             development, where creativity meets functionality.
           </Typography>
         </div>
-        <img
+        <Image
           src="/image/image-7.jpg"
+          alt="Jack Hui"
+          width={800}
+          height={672}
           className="h-[42rem] w-full rounded-xl object-scale-down"
         />
       </div>
