@@ -1,4 +1,5 @@
-/* eslint-disable @next/next/next-script-for-ga */
+// @ts-ignore: allow side-effect CSS import without type declarations
+import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import dynamic from "next/dynamic";
