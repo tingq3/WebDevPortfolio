@@ -13,15 +13,7 @@ const RESUME_ITEMS = [
   {
     icon: ChartBarIcon,
     children: "Bachelor of Computer Science UNSW",
-  },
-  {
-    icon: PuzzlePieceIcon,
-    children: "Certified Web Developer ",
-  },
-  {
-    icon: CursorArrowRaysIcon,
-    children: "Frontend Framework Proficiency Certification",
-  },
+  }
 ];
 
 export function Resume() {
@@ -33,16 +25,17 @@ export function Resume() {
             My Resume
           </Typography>
           <Typography className="mb-4 mt-3 w-9/12 font-normal !text-gray-500">
-            Highly skilled and creative Web Developer with 5+ years of
-            experience in crafting visually stunning and functionally robust
-            websites and web applications.
+            Full-stack developer skilled in building scalable web applications, 
+            integrating APIs, and managing both frontend and backend systems. 
+            Experienced with modern frameworks, databases, and delivering efficient, 
+            user-focused digital solutions.
           </Typography>
           <Button
             variant="text"
             color="gray"
             className="flex items-center gap-2"
           >
-            <a>view more</a>
+            <a href="/image/JackHui.pdf">view more</a>
             <ArrowRightIcon
               strokeWidth={3}
               className="h-3.5 w-3.5 text-gray-900"

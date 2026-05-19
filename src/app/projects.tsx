@@ -6,22 +6,22 @@ import { Typography } from "@/lib/mt";
 const PROJECTS = [
   {
     img: "/image/blog2.svg",
+    title: "Simple Note App",
+    desc: "A simple Javascript note app based on react and typescript with frontend design using tailwindcss. Local storage using Dexie.js",
+    href: "https://note-app-pearl-alpha.vercel.app"
+  },
+  {
+    img: "/image/blog3.svg",
     title: "Weather Trend Prediction Research",
     desc: "A research project evaluating different machine learning models to learn and predict weather trends, using Python for data processing, visualization, and model comparison.",
     href: "/image/weatherReport.pdf"
   },
   {
-    img: "/image/blog3.svg",
-    title: "Startup Flowchart Web App",
-    desc: "A fast and lightweight web application designed for startups to quickly create, edit, and share flowcharts, focusing on usability, performance, and clean interface design.",
-    href: "https://auto-timetable-gilt.vercel.app/"
-  },
-  // {
-  //   img: "/image/blog4.svg",
-  //   title: "E-commerce Web Application",
-  //   desc: "An e-commerce platform offering access to modern gadgets and accessories, featuring dynamic product listings and a scalable, data-driven structure.",
-  //   href: "#"
-  // },
+    img: "/image/blog-1.svg",
+    title: "Trendyy",
+    desc: "Trendyy is a full-stack fashion app built with Next.js that uses RESTful APIs, AI-powered image embedding and web scraping, and AWS-based cloud storage and database services.",
+    href: "https://github.com/ParkJunbin/Trendyy"
+  }
 ];
 
 export function Projects() {
