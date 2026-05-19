@@ -26,7 +26,7 @@ function Hero() {
           </Typography>
         </div>
         <Image
-          src="/image/image-7.jpg"
+          src={withBasePath("/image/image-7.jpg")}
           alt="Jack Hui"
           width={800}
           height={672}
