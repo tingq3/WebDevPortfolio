@@ -1,6 +1,7 @@
 "use client";
 
 import { Typography, Button } from "@/lib/mt";
+import { withBasePath } from "../lib/base-path";
 import {
   ChartBarIcon,
   PuzzlePieceIcon,
@@ -35,7 +36,7 @@ export function Resume() {
             color="gray"
             className="flex items-center gap-2"
           >
-            <a href="/image/JackHui.pdf">view more</a>
+            <a href={withBasePath("/image/JackHui.pdf")}>view more</a>
             <ArrowRightIcon
               strokeWidth={3}
               className="h-3.5 w-3.5 text-gray-900"

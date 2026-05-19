@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import Providers from "@/components/providers";
+import { withBasePath } from "../lib/base-path";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -24,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <link rel="shortcut icon" href={withBasePath("/favicon.png")} type="image/png" />
       </head>
       <body className={roboto.className}>
         <Providers>

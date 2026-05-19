@@ -2,22 +2,23 @@
 
 import { ProjectCard } from "@/components";
 import { Typography } from "@/lib/mt";
+import { withBasePath } from "../lib/base-path";
 
 const PROJECTS = [
   {
-    img: "/image/blog2.svg",
+    img: withBasePath("/image/blog2.svg"),
     title: "Simple Note App",
     desc: "A simple Javascript note app based on react and typescript with frontend design using tailwindcss. Local storage using Dexie.js",
     href: "https://note-app-pearl-alpha.vercel.app"
   },
   {
-    img: "/image/blog3.svg",
+    img: withBasePath("/image/blog3.svg"),
     title: "Weather Trend Prediction Research",
     desc: "A research project evaluating different machine learning models to learn and predict weather trends, using Python for data processing, visualization, and model comparison.",
-    href: "/image/weatherReport.pdf"
+    href: withBasePath("/image/weatherReport.pdf")
   },
   {
-    img: "/image/blog-1.svg",
+    img: withBasePath("/image/blog-1.svg"),
     title: "Trendyy",
     desc: "Trendyy is a full-stack fashion app built with Next.js that uses RESTful APIs, AI-powered image embedding and web scraping, and AWS-based cloud storage and database services.",
     href: "https://github.com/ParkJunbin/Trendyy"

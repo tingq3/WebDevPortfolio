@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Typography } from "@/lib/mt";
+import { withBasePath } from "../lib/base-path";
 
 function Hero() {
   return (
@@ -10,7 +11,7 @@ function Hero() {
         <div className="row-start-2 lg:row-auto">
           <Typography
             variant="h1"
-            color="blue-gray"
+            src={withBasePath("/image/image-7.jpg")}
             className="mb-4 lg:text-5xl !leading-tight text-3xl"
           >
             Welcome to my Web <br /> Development Portofolio!
